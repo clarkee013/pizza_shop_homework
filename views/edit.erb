@@ -1,0 +1,17 @@
+<form action="/pizza/<%= @pizza.id%>" method="POST">
+  
+
+  <label for="pizza-select">Select a pizza:</label>
+  <select name="topping" id="pizza-select">
+
+  <option selected value="<%= @pizza.topping%>"><%= @pizza.topping%></option>
+
+    <option value="Pepperoni">Pepperoni</option>
+    <option value="Hawaiian">Hawaiian</option>
+  </select>
+
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" name="quantity" value="<%= @pizza.quantity%>">
+
+  <input type="submit" value="Order Pizza">
+</form>

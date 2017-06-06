@@ -1,0 +1,14 @@
+<p><a href="/customers/new">New Customer</a></p>
+
+<hr />
+<hr />
+<p>All the Customers!!!</p>
+<hr />
+<hr />
+
+<% @customers.each do |customer| %>
+  <p>Customer ID: <%= customer.id() %> </p>
+  <p>Name: <%= customer.name() %> </p>
+  <hr />
+  <% end %>
+

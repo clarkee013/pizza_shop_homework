@@ -1,0 +1,13 @@
+<form action="/customer/<%= @customer.id%>" method="POST">
+  
+
+  <label for="customer-select">Select a customer:</label>
+  <select name=name id="customer-select">
+
+  <option selected value="<%= @customer.name %>"><%= @customer.name%></option>
+
+  </select>
+
+
+  <input type="submit" value="Amend Customer">
+</form>
